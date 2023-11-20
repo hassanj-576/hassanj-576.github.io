@@ -372,9 +372,8 @@
 
 				<div class="testimonial-block">
 					<p>
-						The RPA services from Neural Lines have greatly streamlined our business operations and daily tasks, resulting in significant time and resource savings. 
-						<br><br>
-						<br><br>
+						I have had the pleasure of working with Neural Lines for many years, and I can confidently say that they are exceptional professional in the field of computer automations. Their expertise in creating efficient and ...
+						<a href="#" class="see-more-link">See more</a>
 					</p>
 
 					<div class="client-info d-flex align-items-center">
@@ -406,6 +405,13 @@
 		</div>
 	</div>
 </section>
+
+<div id="testimonialModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalContent"></div>
+    </div>
+</div>
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/neurallines/30min?primary_color=15bee4" style="min-width:320px;height:700px;"></div>
@@ -500,6 +506,36 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
     
     <script src="js/script.js"></script>
+
+	<!-- See More Section -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var modal = document.getElementById("testimonialModal");
+			var modalContent = document.getElementById("modalContent");
+	
+			var seeMoreLinks = document.querySelectorAll(".see-more-link");
+
+			seeMoreLinks.forEach(function(link) {
+				link.addEventListener("click", function(event) {
+					event.preventDefault();				
+					var testimonialContent = "I have had the pleasure of working with Neural Lines for many years, and I can confidently say that they are exceptional professional in the field of computer automations. Their expertise in creating efficient and streamlined processes has truly transformed our business. Their dedication and commitment to delivering top-notch ML and Automation solutions have been instrumental in enhancing our productivity and overall success. They consistently goes above and beyond to ensure that our needs are met and that our operations run smoothly. Their leadership's innovative thinking and problem-solving skills have been invaluable in driving our business forward. I wholeheartedly recommend Neural Lines for any automation projects or website development endeavors. Their passion, knowledge, and outstanding work ethic make them a true asset to any organization. Thank you, Neural Lines, for your unwavering commitment and the tremendous impact you've made on our business.";		
+					modalContent.innerHTML = testimonialContent;
+					modal.style.display = "block";
+				});
+			});
+		
+			document.querySelector(".close").addEventListener("click", function() {
+				modal.style.display = "none";
+			});
+		
+			window.addEventListener("click", function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			});
+		});
+		</script>
+		
 
   </body>
   </html>
