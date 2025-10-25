@@ -1616,5 +1616,150 @@ ul.dropdown-menu li {
   /* background-color: #ffe6f7; */
 }
 
+/* Case Study Styles */
+.case-study-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-3px);
+}
+
+.case-study-header {
+  border-bottom: 2px solid #15bee4;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.case-study-header h3 {
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.case-study-industry {
+  background-color: #15bee4;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.case-study-content h4 {
+  color: #15bee4;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.case-study-content ul {
+  margin-bottom: 20px;
+}
+
+.case-study-content li {
+  margin-bottom: 5px;
+  color: #6F8BA4;
+}
+
+.case-study-tech {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.case-study-tech .badge {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #15bee4;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+/* Project Card Styles */
+.project-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.project-card .card-img-top {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.project-card .card-img-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .card-img-top img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(21, 190, 228, 0.9), rgba(0, 123, 255, 0.9));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.project-content h4 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 15px;
+}
+
+.project-tech {
+  margin-top: 15px;
+}
+
+.project-tech .badge {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #15bee4;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
 
 /*# sourceMappingURL=style.css.map */
